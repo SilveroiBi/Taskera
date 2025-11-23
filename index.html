@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Taskera</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./IMG/Taskera.png"> 
+    <link rel="stylesheet" href="./style.css">
+
+
+  </head>
+    
+  <body>  
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Muli:300' rel='stylesheet' type='text/css'>
+
+
+<header class="page-title">
+  <h1>
+        <img  src="./IMG/Taskera.png" alt="Taskera" class="logo" width="60 " height="60" />
+    Taskera
+  </h1>
+
+</header>
+
+<main role="main" class="main-wrap hidden">
+
+  <header role="heading" class="header">
+    <h1 class="app-header"> Adicione sua Tarefa </h1>
+  </header>
+
+  <section class="main-content">
+    <section class="todo-form">
+
+      <form role="form" id="todoForm">
+        <div class="row">
+          <label for="title"> Titulo da Tarefa </label>
+          <input class="form-input" id="title" type="text" />
+        </div>
+
+        <div class="row">
+          <label for="description"> Descrição </label>
+          <textarea id="description" rows="4" cols="30" ></textarea>
+        </div>
+
+        <div class="row">
+          <label for="priority"> Prioridade </label>
+          <select id="priority">
+            <option value="urgente">Urgente</option>
+            <option value="media">Media</option>
+            <option value="baixa">Baixa</option>
+          </select>
+        </div>
+
+        <div class="row submit-btn">
+         <input type="submit" class="primary-button" value="Salvar">
+        </div>
+      </form>
+
+    </section>
+
+
+  </section>
+</main>
+
+<section class="todo-list-container">
+  <div class="todo-in-progress">
+    <h2> Tarefas</h2>
+    <ul ondragstart="" class="todo-list" id="target">
+
+   
+
+      <li draggable="true" class="todo-item urgente">
+        <div class="card">
+
+          <h3 class="todo-title"> 
+            <span class="action">
+              <i class="material-icons md-36 icon-delete">delete</i>
+              <i class="icon-checkbox-outline material-icons md-36 md-dark">check_box_outline_blank</i>
+              <i class="icon-checkbox material-icons md-36 md-light">check_box</i>
+            </span> 
+          <span class="title">Teste</span></h3>
+
+          <p class="todo-description">
+
+            Teste </p>
+          <span class="todo-priority"> High </span>
+
+        </div>
+
+      </li>
+
+      <li draggable="true" class="todo-item media">
+        <div class="card">
+
+          <h3 class="todo-title"> <span class="action">
+          <i class="material-icons md-36 icon-delete">delete</i>
+                    <i class="icon-checkbox-outline material-icons md-36 md-dark">check_box_outline_blank</i>
+                    <i class="icon-checkbox material-icons md-36 md-light">check_box</i>
+                  </span> 
+          <span class="title">Teste </span></h3>
+
+          <p class="todo-description">
+
+            Teste </p>
+          <span class="todo-priority"> Media</span>
+
+        </div>
+
+      </li>
+      <li draggable="true" class="todo-item baixa">
+        <div class="card">
+
+          <h3 class="todo-title"> <span class="action">
+          <i class="material-icons md-36 icon-delete">delete</i>
+                    <i class="icon-checkbox-outline material-icons md-36 md-dark">check_box_outline_blank</i>
+                    <i class="icon-checkbox material-icons md-36 md-light">check_box</i>
+                  </span> 
+          <span class="title">Teste</span></h3>
+
+          <p class="todo-description">
+
+            Teste</p>
+          <span class="todo-priority"> Baixa </span>
+
+        </div>
+
+      </li>
+
+       <li class=" new">
+        <div class="card">
+          <h3 class="todo-title"> <span class="action">
+                    <i class="complete material-icons md-36 md-light">add_circle_outline</i>
+                  </span> 
+          <span class="title">Adicionar nova tarefa</span></h3>
+          </div>
+
+      </li>
+
+
+    </ul>
+  </div>
+
+
+</section>
+
+
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
