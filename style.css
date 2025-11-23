@@ -386,13 +386,13 @@ li {
 
 .footer {
   font-size: 1.5em;
-  color: #D2527F;
+  color: #52cad2;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 5px 0;
   text-align: center;
   opacity: .6;
-  background-color: #22313F;
+  background-color: #000000;
 }
 
 .footer [class*=icon] {
